@@ -75,7 +75,7 @@
 
 #define FEE_PER_KB_OLD                                  ((uint64_t)10) // .1 * pow(10, 1)
 #define FEE_PER_KB_V2                                   ((uint64_t)40) // .4 * pow(10, 1)
-#define FEE_PER_KB                                      ((uint64_t)500) // 5 * pow(10, 2)
+#define FEE_PER_KB                                      ((uint64_t)1) // .001 * pow(10, 2)
 #define DYNAMIC_FEE_PER_KB_BASE_FEE                     ((uint64_t)2500) // .1 * pow(10, 1)
 #define DYNAMIC_FEE_PER_KB_BASE_BLOCK_REWARD            ((uint64_t)2500) // .10 * pow(10, 1)
 #define DYNAMIC_FEE_PER_KB_BASE_FEE_V5                  ((uint64_t)2500 * (uint64_t)CRYPTONOTE_TX_FEE_RESERVED_SIZE / CRYPTONOTE_BLOCK_FEE_REWARD_ZONE_V5)
@@ -181,7 +181,7 @@ namespace config
 {
   uint64_t const DEFAULT_FEE_ATOMIC_XMR_PER_KB = 5;
   uint8_t const FEE_CALCULATION_MAX_RETRIES = 10;
-  uint64_t const DEFAULT_DUST_THRESHOLD = ((uint64_t)500); // .20 
+  uint64_t const DEFAULT_DUST_THRESHOLD = ((uint64_t)1); // .001 
   uint64_t const BASE_REWARD_CLAMP_THRESHOLD = ((uint64_t)100000000); // pow(10, 8)
   std::string const P2P_REMOTE_DEBUG_TRUSTED_PUB_KEY = "0000000000000000000000000000000000000000000000000000000000000000";
 
@@ -192,7 +192,7 @@ namespace config
   uint16_t const RPC_DEFAULT_PORT = 10390;
   uint16_t const ZMQ_RPC_DEFAULT_PORT = 30391;
   boost::uuids::uuid const NETWORK_ID = { {
-      0x83, 0x6C, 0xF6 ,0xF6, 0xF6, 0xEA, 0x6D, 0x86, 0xF6 , 0xD6, 0xC6, 0xF6, 0xF6, 0xE6, 0xD6, 0x6C
+       0xEA, 0x6D, 0x86, 0xF6 , 0xD6, 0xC6, 0xF6, 0xF6, 0xE6, 0xD6, 0x6C, 0x83, 0x6C, 0xF6 ,0xF6, 0xF6
     } }; // Bender's nightmare
   std::string const GENESIS_TX = "011201ff00011e026bc5c7db8a664f652d78adb587ac4d759c6757258b64ef9cba3c0354e64fb2e42101abca6a39c561d0897be183eb0143990eba201aa7d2c652ab0555d28bb4b70728";
   uint32_t const GENESIS_NONCE = 10000;
