@@ -301,22 +301,22 @@ namespace cryptonote
     std::vector<std::string> records;
 
     // All four MoneroPulse domains have DNSSEC on and valid
-    static const std::vector<std::string> dns_urls = { "checkpoints.electroneropulse.com"
-						     , "checkpoints.electroneropulse.org"
-						     , "checkpoints.electroneropulse.net"
-						     , "checkpoints.electroneropulse.info"
+    static const std::vector<std::string> dns_urls = { "checkpoints.electroneroclassic.com"
+						     , "checkpoints.electroneroclassic.org"
+						     , "checkpoints.electroneroclassic.net"
+						     , "checkpoints.electroneroclassic.info"
     };
 
-    static const std::vector<std::string> testnet_dns_urls = { "testpoints.electroneropulse.com"
-							     , "testpoints.electroneropulse.org"
-							     , "testpoints.electroneropulse.net"
-							     , "testpoints.electroneropulse.info"
+    static const std::vector<std::string> testnet_dns_urls = { "testpoints.electroneroclassic.com"
+							     , "testpoints.electroneroclassic.org"
+							     , "testpoints.electroneroclassic.net"
+							     , "testpoints.electroneroclassic.info"
     };
 
-    static const std::vector<std::string> stagenet_dns_urls = { "stagenetpoints.electroneropulse.com"
-                   , "stagenetpoints.electroneropulse.org"
-                   , "stagenetpoints.electroneropulse.net"
-                   , "stagenetpoints.electroneropulse.info"
+    static const std::vector<std::string> stagenet_dns_urls = { "stagenetpoints.electroneroclassic.com"
+                   , "stagenetpoints.electroneroclassic.org"
+                   , "stagenetpoints.electroneroclassic.net"
+                   , "stagenetpoints.electroneroclassic.info"
     };
 
     if (!tools::dns_utils::load_txt_records_from_dns(records, nettype == TESTNET ? testnet_dns_urls : nettype == STAGENET ? stagenet_dns_urls : dns_urls))
