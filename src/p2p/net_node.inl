@@ -370,16 +370,16 @@ namespace nodetool
   std::set<std::string> full_addrs;
   if (nettype == cryptonote::TESTNET)
     {
-      full_addrs.insert("206.189.20.68:43080");
-      full_addrs.insert("46.101.40.29:43080"); 
-      full_addrs.insert("165.227.189.226:43080");
-      full_addrs.insert("104.236.175.63:43080"); 
-      full_addrs.insert("159.89.249.200:43080");
-      full_addrs.insert("174.138.15.35:43080");
-      full_addrs.insert("104.248.168.133:43080");
-      full_addrs.insert("104.248.175.130:43080");
-      full_addrs.insert("104.248.162.18:43080");
-      full_addrs.insert("104.248.166.224:43080");
+      full_addrs.insert("206.189.20.68:33080");
+      full_addrs.insert("46.101.40.29:33080"); 
+      full_addrs.insert("165.227.189.226:33080");
+      full_addrs.insert("104.236.175.63:33080"); 
+      full_addrs.insert("159.89.249.200:33080");
+      full_addrs.insert("174.138.15.35:33080");
+      full_addrs.insert("104.248.168.133:33080");
+      full_addrs.insert("104.248.175.130:33080");
+      full_addrs.insert("104.248.162.18:33080");
+      full_addrs.insert("104.248.166.224:33080");
     }
     else if (nettype == cryptonote::STAGENET)
     {
@@ -396,18 +396,18 @@ namespace nodetool
     }
     else
     {
-      full_addrs.insert("46.101.40.29:20389"); 
-      full_addrs.insert("107.170.236.49:20389"); 
-      full_addrs.insert("165.227.189.226:20389");
-      full_addrs.insert("104.236.175.63:20389"); 
-      full_addrs.insert("159.89.249.200:20389"); 
-      full_addrs.insert("174.138.15.35:20389");
-      full_addrs.insert("138.68.192.102:20389");
-      full_addrs.insert("45.55.120.174:20389");      
-      full_addrs.insert("206.189.20.68:20389");
-      full_addrs.insert("142.93.38.51:20389");
-      full_addrs.insert("104.248.162.18:20389");
-      full_addrs.insert("104.248.166.224:20389");
+      full_addrs.insert("46.101.40.29:10389"); 
+      full_addrs.insert("107.170.236.49:10389"); 
+      full_addrs.insert("165.227.189.226:10389");
+      full_addrs.insert("104.236.175.63:10389"); 
+      full_addrs.insert("159.89.249.200:10389"); 
+      full_addrs.insert("174.138.15.35:10389");
+      full_addrs.insert("138.68.192.102:10389");
+      full_addrs.insert("45.55.120.174:10389");      
+      full_addrs.insert("206.189.20.68:10389");
+      full_addrs.insert("142.93.38.51:10389");
+      full_addrs.insert("104.248.162.18:10389");
+      full_addrs.insert("104.248.166.224:10389");
     }
     return full_addrs;
   }
