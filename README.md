@@ -13,7 +13,7 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.`
 ## Development resources
 
 - Web: [electroneroclassic.org](https://electroneroclassic.org)
-- Chat: [t.me/etnxp](https://t.me/etnxp)
+- Chat: [t.me/electroneroclassic](https://t.me/electroneroclassic)
 - Mail: [support@electronero.org](mailto:support@electronero.org)
 - GitHub: [github.com/electronero-classic/electroneroclassic](https://github.com/electronero-classic/electroneroclassic)
 
