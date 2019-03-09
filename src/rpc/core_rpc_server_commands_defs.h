@@ -416,7 +416,6 @@ namespace cryptonote
         END_KV_SERIALIZE_MAP()
       };
   };
-  
   //-----------------------------------------------
   struct COMMAND_RPC_GET_RANDOM_OUTS
   {
