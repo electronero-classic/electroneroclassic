@@ -1,4 +1,4 @@
-# Electronero Pulse
+# Electronero Classic
 
 Source code forked from Electronero, based on Monero
 
@@ -12,10 +12,10 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.`
 
 ## Development resources
 
-- Web: [electroneropulse.org](https://electroneropulse.org)
+- Web: [electroneroclassic.org](https://electroneroclassic.org)
 - Chat: [t.me/etnxp](https://t.me/etnxp)
 - Mail: [support@electronero.org](mailto:support@electronero.org)
-- GitHub: [github.com/electronero-pulse/electroneropulse](https://github.com/electronero-pulse/electroneropulse)
+- GitHub: [github.com/electronero-classic/electroneroclassic](https://github.com/electronero-classic/electroneroclassic)
 
 ## Vulnerability response
 
@@ -24,9 +24,9 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.`
 
 ## Introduction
 
-Electronero Pulse is a private, secure, untraceable, decentralised digital currency. You control your funds, and nobody can trace your transfers unless you allow them to do so.
+Electronero Classic is a private, secure, untraceable, decentralised digital currency. You control your funds, and nobody can trace your transfers unless you allow them to do so.
 
-**Privacy:** Electronero Pulse uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
+**Privacy:** Electronero Classic uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 
 **Security:** Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 25 word mnemonic seed that is only displayed once, and can be written down to backup the wallet. Wallet files are encrypted with a passphrase to ensure they are useless if stolen.
 
@@ -40,7 +40,7 @@ Electronero Pulse is a private, secure, untraceable, decentralised digital curre
 
 ## Supporting the project
 
-Electronero Pulse is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Electronero donations can be made to the Electronero donation address via the `donate` command (type `help` in the command-line wallet for details). Else, here are our dev teams addresses. The funding goes to many developers who contribute and believe me, they are greatful for our assistance! 
+Electronero Classic is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Electronero donations can be made to the Electronero donation address via the `donate` command (type `help` in the command-line wallet for details). Else, here are our dev teams addresses. The funding goes to many developers who contribute and believe me, they are greatful for our assistance! 
 
 The Monero donation address is: `449JLhz9p6756c5tGACveuX76qa8UxMkFMd5uqG9SEJ3LcVJLjh4KvxJQ1Pf4yJmYgQRTrNPZhaga8eYynVqHfac9VWhF1m`
 
@@ -59,7 +59,7 @@ The Sumokoin donation address is: `Sumoo47CGenbHfZtpCVV4PRMSsXP38idFdt5JSj7VuJrD
 
 ## About this project
 
-This is the core implementation of Electronero Pulse. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Monero that uses the protocol and network in a compatible manner.
+This is the core implementation of Electronero Classic. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Monero that uses the protocol and network in a compatible manner.
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
@@ -96,7 +96,7 @@ X's indicate that these details have not been determined as of commit date.
 
 Approximately three months prior to a scheduled software upgrade, a branch from Master will be created with the new release version tag. Pull requests that address bugs should then be made to both Master and the new release branch. Pull requests that require extensive review and testing (generally, optimizations and new features) should *not* be made to the release branch. 
 
-## Compiling Electronero Pulse from source
+## Compiling Electronero Classic from source
 
 ### Dependencies
 
@@ -137,7 +137,7 @@ build the library binary manually. This can be done with the following command `
 
 Clone recursively to pull-in needed submodule(s):
 
-`$ git clone --recursive https://github.com/electronero-pulse/electroneropulse`
+`$ git clone --recursive https://github.com/electronero-classic/electroneroclassic`
 
 If you already have a repo cloned, initialize and update:
 
@@ -153,7 +153,7 @@ invokes cmake commands as needed.
 * Install the dependencies
 * Change to the root of the source code directory and build:
 
-        cd electroneropulse
+        cd electroneroclassic
         make
 
     *Optional*: If your machine has several cores and enough memory, enable
@@ -166,9 +166,9 @@ invokes cmake commands as needed.
 
 * The resulting executables can be found in `build/release/bin`
 
-* Add `PATH="$PATH:$HOME/electroneropulse/build/release/bin"` to `.profile`
+* Add `PATH="$PATH:$HOME/electroneroclassic/build/release/bin"` to `.profile`
 
-* Run Electronero with `pulsed --detach`
+* Run Electronero with `classicd --detach`
 
 * **Optional**: build and run the test suite to verify the binaries:
 
@@ -207,8 +207,8 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 ```
 * Clone electronero and checkout most recent release version:
 ```
-        git clone https://github.com/electronero-pulse/electroneropulse.git
-	cd electroneropulse
+        git clone https://github.com/electronero-classic/electroneroclassic.git
+	cd electroneroclassic
 ```
 * Build:
 ```
@@ -218,9 +218,9 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 
 * The resulting executables can be found in `build/release/bin`
 
-* Add `PATH="$PATH:$HOME/electroneropulse/build/release/bin"` to `.profile`
+* Add `PATH="$PATH:$HOME/electroneroclassic/build/release/bin"` to `.profile`
 
-* Run Electronero with `pulsed --detach`
+* Run Electronero with `classicd --detach`
 
 * You may wish to reduce the size of the swap file after the build has finished, and delete the boost directory from your home directory
 
@@ -431,15 +431,15 @@ By default, in either dynamically or statically linked builds, binaries target t
 * ```make release-static-win64``` builds binaries on 64-bit Windows portable across 64-bit Windows systems
 * ```make release-static-win32``` builds binaries on 64-bit or 32-bit Windows portable across 32-bit Windows systems
 
-## Running pulsed
+## Running classid
 
 The build places the binary in `bin/` sub-directory within the build directory
 from which cmake was invoked (repository root by default). To run in
 foreground:
 
-    ./bin/pulsed
+    ./bin/classid
 
-To list all available options, run `./bin/pulsed --help`.  Options can be
+To list all available options, run `./bin/classid --help`.  Options can be
 specified either on the command line or in a configuration file passed by the
 `--config-file` argument.  To specify an option in the configuration file, add
 a line with the syntax `argumentname=value`, where `argumentname` is the name
@@ -447,14 +447,14 @@ of the argument without the leading dashes, for example `log-level=1`.
 
 To run in background:
 
-    ./bin/pulsed --log-file pulsed.log --detach
+    ./bin/classid --log-file classid.log --detach
 
 To run as a systemd service, copy
-[electroneropulse.service](utils/systemd/electroneropulse.service) to `/etc/systemd/system/` and
-[pulsed.conf](utils/conf/pulsed.conf) to `/etc/`. The [example
-service](utils/systemd/pulsed.service) assumes that the user `electroneropulse` exists
+[electroneroclassic.service](utils/systemd/electroneroclassic.service) to `/etc/systemd/system/` and
+[classicd.conf](utils/conf/classicd.conf) to `/etc/`. The [example
+service](utils/systemd/classicd.service) assumes that the user `electroneroclassic` exists
 and its home is the data directory specified in the [example
-config](utils/conf/pulsed.conf).
+config](utils/conf/classicd.conf).
 
 If you're on Mac, you may need to add the `--max-concurrency 1` option to
-pulse-wallet-cli, and possibly pulsed, if you get crashes refreshing.
+classic-wallet-cli, and possibly classicd, if you get crashes refreshing.
